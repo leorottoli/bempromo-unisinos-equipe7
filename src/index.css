@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    to left,
+   #e5e5e5 0%,
+   #e5e5e5 100%
+  );
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.logo{
+  max-width:300px;
+  max-height:250px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.search {
+  width: 10px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color:transparent;
+  background-image: url('https://img.icons8.com/material/24/969696/search--v1.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 8px 0px 8px 40px;
+  transition: width 0.4s ease-in-out; 
+  cursor: pointer;
+}
+
+.search:hover {
+  width: 180px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  outline-color: transparent;
+  cursor: text;
+}
+
+.content{
+  background-color: white;
+  box-shadow: 
+    0px 3px 1px -2px rgba(0,0,0,0.2), 
+    0px 2px 2px 0px rgba(0,0,0,0.14), 
+    0px 1px 5px 0px rgba(0,0,0,0.12);
+  border-radius: 4px;
+}
+
+.content-header{
+  padding-right: 8px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.content-body{
+  overflow-x: auto;
+  position: relative;
+  table-layout: auto;
+  width: 100%;
+  display: table;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.tr-liner {
+  border-bottom: 1px solid #ccc;
+}
+
+.tr-header {
+  font-weight: bold ;
+}
+
+.table-cell{
+  display: table-cell;
+    padding: 16px;
+    font-size: 0.875rem;
+    text-align: left;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    vertical-align: baseline;
+}
+.custom {
+  min-width: 865px;
+}
+
+.custom-details {
+  min-width: 665px;
+}
+
+.form-group{
+  margin-bottom: 0rem;
+}
+
+.client-input{
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px dotted #ccc;
+  border-radius: 5px;
+  text-align: right;
+  background-color:#fff;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  vertical-align: inherit;
+  padding: 6px 10px 6px 10px;
+}
+
+.client-input:hover, .client-input:focus{
+  border: 1px dotted transparent;
+  background-color:#f5f5f5;
+  outline-color: transparent;
+}
+
+.client-input-off{
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px dotted #c0c0c0;
+  border-radius: 5px;
+  text-align: right;
+  color: #c0c0c0;
+  background-color:#fcfcfc;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  vertical-align: inherit;
+  padding: 6px 10px 6px 10px;
+}
+
+.client-input-off:hover, .client-input:focus{
+  outline-color: transparent;
+}
+
+.sub-titulo{
+  background-color:#f5f5f5;
+  padding: 15px 0px 10px 15px;
+}
+
+.table-password{
+    padding: 10px 16px 0px 16px;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    vertical-align: baseline;
+}
+
+.login-input{
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px dotted #ccc;
+  border-radius: 5px;
+  text-align: right;
+  background-color:#fff;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  vertical-align: inherit;
+  padding: 10px;
+}
+
+.login-input:hover, .login-input:focus{
+  border: 1px dotted transparent;
+  background-color:#f5f5f5;
+  outline-color: transparent;
+}
+
+.login-btn{
+  width: 300px;
+}
+
+.error-msg {
+  color: red;
+}
